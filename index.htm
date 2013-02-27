@@ -1,0 +1,80 @@
+﻿<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="./styles/style.css" />
+	<script src="js/jquery-1.6.2.min.js"></script>
+	<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+	<script src="js/puzzle.js"></script>
+	<script>
+	preload([
+		"./puzzle/pieces/blank.jpg", "./puzzle/pieces/tile_02.jpg", "./puzzle/pieces/tile_03.jpg",
+		"./puzzle/pieces/tile_04.jpg", "./puzzle/pieces/tile_05.jpg",
+		"./puzzle/pieces/tile_06.jpg", "./puzzle/pieces/tile_07.jpg",
+		"./puzzle/pieces/tile_08.jpg", "./puzzle/pieces/tile_09.jpg",
+		"./puzzle/pieces/tile_10.jpg", "./puzzle/pieces/tile_11.jpg",
+		"./puzzle/pieces/tile_12.jpg", "./puzzle/pieces/tile_13.jpg",
+		"./puzzle/pieces/tile_14.jpg", "./puzzle/pieces/tile_15.jpg",
+		"./puzzle/pieces/tile_16.jpg", "./puzzle/pieces/tile_17.jpg",
+		"./puzzle/pieces/tile_18.jpg", "./puzzle/pieces/tile_19.jpg",
+		"./puzzle/pieces/tile_20.jpg", "./puzzle/pieces/tile_21.jpg",
+		"./puzzle/pieces/tile_22.jpg", "./puzzle/pieces/tile_23.jpg",
+		"./puzzle/pieces/tile_24.jpg", "./puzzle/pieces/tile_25.jpg",
+	]);		
+		
+	$(document).ready( function() {
+		initialize();
+		$('input[id="btnScramble"]').click(scramble);
+		$('input[id="btnReset"]').click(reset);
+	});
+	</script>
+</head>
+<body>
+	<div class="page-wrap">
+		<div class="game">
+			<div class="statusDisplay">
+				<div class="controls">
+					<input id="btnScramble" type="button" value="Scramble">
+					<input id="btnReset" type="button" value="Reset">
+				</div>
+				<div class="score">
+					<span class="scoreItem">
+						Moves: <span id="moves"></span>
+					</span>
+					<span class="scoreItem">
+						Time: <span id="time"></span>
+					</span>
+				</div>
+			</div>
+			<div class="frame">
+				<div class="puzzle">
+					<img class="tile" src="./puzzle/pieces/blank.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_02.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_03.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_04.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_05.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_06.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_07.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_08.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_09.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_10.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_11.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_12.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_13.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_14.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_15.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_16.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_17.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_18.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_19.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_20.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_21.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_22.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_23.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_24.jpg" />
+					<img class="tile" src="./puzzle/pieces/tile_25.jpg" />
+				</div>
+			</div>
+		</div>
+		<p>&copy; 13ninjas.com</p>
+	</div>
+</body>
+</html>

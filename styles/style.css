@@ -1,0 +1,75 @@
+@charset "utf-8"
+/* CSS File */
+
+html {
+	margin: 0; padding: 0;
+}
+
+body {
+	margin-top: 15px;
+	text-align: center;
+	background-color: #ddd;
+}
+
+#blank {
+	z-index: 5;
+}
+
+.page-wrap {
+	margin: 0 auto; padding: 0;
+	width: 675px;
+	text-align: left;
+}
+
+.game {
+	width: 675px;
+}
+
+.controls input {
+	width: 100px;
+}
+
+.score span.scoreItem {
+	width: 100px;
+}
+
+.statusDisplay {
+	margin: 0 auto; padding; 0;
+	width: 675px;
+}
+
+.controls {
+	margin: 0; padding: 0;
+	float: left;
+}
+
+.score {
+	margin: 0; padding: 0;
+	float: right;
+}
+
+.frame {
+	margin: 0; padding: 0;
+	clear: both;
+	position: relative;
+	width: 675px; height: 675px;
+	background-image: url('../puzzle/frame.jpg');
+}
+
+.puzzle {
+	margin: 0 auto; padding: 0;
+	width: 600px; height: 600px;
+	top: 37px; left: 37px;
+	position: absolute;
+	clear: both;
+}
+
+img.tile {
+	position: absolute;
+	margin: 0; padding: 0; display: block; float: left;
+	z-index: 10;
+}
+
+.controls input {
+	padding-left; 20px;
+}
